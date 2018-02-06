@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="style.css">
+	<title>Pitch Things - Training</title>
+	<br />
+	<div id="pageSelector">
+		<a href="index.html"><button class="pageType">Home</button></a>
+		<a href="library.html"><button class="pageType">Library</button></a>
+		<a href="training.html"><button class="pageType">Training</button></a>
+		<a href="test.html"><button class="pageType">Test</button></a>
+	</div>
+	<br /> <hr />
+	<h1>Training</h1>
+	<h3>Welcome to the Training Page! Click "Next" to hear a random note and see which one it is on the screen.</h3>
+</head>
+<body>
+	<br /> <br />
+	<div id="noteName">
+		<span id="nameOfNote"></span><span id="octaveNumber"></span>
+	</div>
+	<br /> <br />
+	<button id="trainButton" class="trainingButton" onclick="training();">Next</button> <button id="trainButtonHear" class="trainingButton" onclick="hearAgainTraining();">Hear Again</button>
+	<script src="ffp.1.js"></script>
+	<script src="utilities.js"></script>
+</body>
+</html>

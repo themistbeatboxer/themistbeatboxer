@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="style.css">
+	<title>Pitch Things - Test</title>
+	<br />
+	<div id="pageSelector">
+		<a href="index.html"><button class="pageType">Home</button></a>
+		<a href="library.html"><button class="pageType">Library</button></a>
+		<a href="training.html"><button class="pageType">Training</button></a>
+		<a href="test.html"><button class="pageType">Test</button></a>
+	</div>
+	<br /> <hr />
+	<h1>Testing</h1>
+	<h3>Welcome to the Testing Page! Here, you will be able to test your ear by hearing random notes and attempting to correctly determine which note it is! Simply click the button of the note you think is being played. If you get it wrong, the same note will be played again and you can answer once more.</h3>
+	<br /> <br />
+	<div id="textThings">
+		<h3>Status: <span id="stat">Not Playing</span></h3>
+		<h3 id="rightwrong"></h3>
+	</div>
+	<br /> <br />
+	<div id="noteButtonSet">
+		<button class="noteButton" onclick="submitNote('A');">A</button>
+		<button class="noteButton" onclick="submitNote('A#/Bb');">A#/Bb</button>
+		<button class="noteButton" onclick="submitNote('B');">B</button>
+		<button class="noteButton" onclick="submitNote('C');">C</button>
+		<button class="noteButton" onclick="submitNote('C#/Db');">C#/Db</button>
+		<button class="noteButton" onclick="submitNote('D');">D</button>
+		<button class="noteButton" onclick="submitNote('D#/Eb');">D#/Eb</button>
+		<button class="noteButton" onclick="submitNote('E');">E</button>
+		<button class="noteButton" onclick="submitNote('F');">F</button>
+		<button class="noteButton" onclick="submitNote('F#/Gb');">F#/Gb</button>
+		<button class="noteButton" onclick="submitNote('G');">G</button>
+		<button class="noteButton" onclick="submitNote('G#/Ab');">G#/Ab</button>
+	</div>
+	<br /> <br />
+	<div id="nextButton">
+		<button id="buttonTest" class="testButton" onclick="test();">Next</button> <button id="buttonTestHear" class="testButton" onclick="hearAgain();">Hear Again</button>
+	</div>
+	<br />
+	<h3>Score: <span id="score">0 / 0</span></h3>
+</head>
+<body>
+
+	<script src="ffp.1.js"></script>
+	<script src="utilities.js"></script>
+</body>
+</html>

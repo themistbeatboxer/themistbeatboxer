@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="style.css">
+	<title>Pitch Things - Library</title>
+	<br />
+	<div id="pageSelector">
+		<a href="index.html"><button class="pageType">Home</button></a>
+		<a href="library.html"><button class="pageType">Library</button></a>
+		<a href="training.html"><button class="pageType">Training</button></a>
+		<a href="test.html"><button class="pageType">Test</button></a>
+	</div>
+	<br /> <hr />
+	<h1>Library</h1>
+	<h3>Welcome to the Library Page! Click a note to hear it!</h3>
+</head>
+<body>
+	<div id="noteButtonSet">
+		<div id="oct1">
+			<h3>C1 - B1</h3>
+			<button id="c1" class="noteButton" onclick="playAudio('c1', 'c1', 1);">C1</button>
+			<button id="c#/db1" class="noteButton" onclick="playAudio('csdb1', 'c#/db1', 1);">C#1/Db1</button>
+			<button id="d1" class="noteButton" onclick="playAudio('d1', 'd1', 1);">D1</button>
+			<button id="d#/eb1" class="noteButton" onclick="playAudio('dseb1', 'd#/eb1', 1);">D#1/Eb1</button>
+			<button id="e1" class="noteButton" onclick="playAudio('e1', 'e1', 1);">E1</button>
+			<button id="f1" class="noteButton" onclick="playAudio('f1', 'f1', 1);">F1</button>
+			<button id="f#/gb1" class="noteButton" onclick="playAudio('fsgb1', 'f#/gb1', 1);">F#1/Gb1</button>
+			<button id="g1" class="noteButton" onclick="playAudio('g1', 'g1', 1);">G1</button>
+			<button id="g#/ab1" class="noteButton" onclick="playAudio('gsab1', 'g#/ab1', 1);">G#1/Ab1</button>
+			<button id="a1" class="noteButton" onclick="playAudio('a1', 'a1', 1);">A1</button>
+			<button id="a#/bb1" class="noteButton" onclick="playAudio('asbb1', 'a#/bb1', 1);">A#1/Bb1</button>
+			<button id="b1" class="noteButton" onclick="playAudio('b1', 'b1', 1);">B1</button>
+		</div>
+		<br />
+		<div id="oct2">
+			<h3>C2 - B2</h3>
+			<button id="c2" class="noteButton" onclick="playAudio('c2', 'c2', 1);">C2</button>
+			<button id="c#/db2" class="noteButton" onclick="playAudio('csdb2', 'c#/db2', 1);">C#2/Db2</button>
+			<button id="d2" class="noteButton" onclick="playAudio('d2', 'd2', 1);">D2</button>
+			<button id="d#/eb2" class="noteButton" onclick="playAudio('dseb2', 'd#/eb2', 1);">D#2/Eb2</button>
+			<button id="e2" class="noteButton" onclick="playAudio('e2', 'e2', 1);">E2</button>
+			<button id="f2" class="noteButton" onclick="playAudio('f2', 'f2', 1);">F2</button>
+			<button id="f#/gb2" class="noteButton" onclick="playAudio('fsgb2', 'f#/gb2', 1);">F#2/Gb2</button>
+			<button id="g2" class="noteButton" onclick="playAudio('g2', 'g2', 1);">G2</button>
+			<button id="g#/ab2" class="noteButton" onclick="playAudio('gsab2', 'g#/ab2', 1);">G#2/Ab2</button>
+			<button id="a2" class="noteButton" onclick="playAudio('a2', 'a2', 1);">A2</button>
+			<button id="a#/bb2" class="noteButton" onclick="playAudio('asbb2', 'a#/bb2', 1);">A#2/Bb2</button>
+			<button id="b2" class="noteButton" onclick="playAudio('b2', 'b2', 1);">B2</button>
+		</div>
+		<br />
+		<div id="oct3">
+			<h3>C3 - B3</h3>
+			<button id="c3" class="noteButton" onclick="playAudio('c3', 'c3', 1);">C3</button>
+			<button id="c#/db3" class="noteButton" onclick="playAudio('csdb3', 'c#/db3', 1);">C#3/Db3</button>
+			<button id="d3" class="noteButton" onclick="playAudio('d3', 'd3', 1);">D3</button>
+			<button id="d#/eb3" class="noteButton" onclick="playAudio('dseb3', 'd#/eb3', 1);">D#3/Eb3</button>
+			<button id="e3" class="noteButton"  onclick="playAudio('e3', 'e3', 1);">E3</button>
+			<button id="f3" class="noteButton" onclick="playAudio('f3', 'f3', 1);">F3</button>
+			<button id="f#/gb3" class="noteButton" onclick="playAudio('fsgb3', 'f#/gb3', 1);">F#3/Gb3</button>
+			<button id="g3" class="noteButton" onclick="playAudio('g3', 'g3', 1);">G3</button>
+			<button id="g#/ab3" class="noteButton" onclick="playAudio('gsab3', 'g#/ab3', 1);">G#3/Ab3</button>
+			<button id="a3" class="noteButton" onclick="playAudio('a3', 'a3', 1);">A3</button>
+			<button id="a#/bb3" class="noteButton" onclick="playAudio('asbb3', 'a#/bb3', 1);">A#3/Bb3</button>
+			<button id="b3" class="noteButton" onclick="playAudio('b3', 'b3', 1);">B3</button>
+		</div>
+		<br />
+		<div id="oct4">
+			<h3>C4 - B4</h3>
+			<button id="c4" class="noteButton" onclick="playAudio('c4', 'c4', 1);">C4</button>
+			<button id="c#/db4" class="noteButton" onclick="playAudio('csdb4', 'c#/db4', 1);">C#4/Db4</button>
+			<button id="d4" class="noteButton" onclick="playAudio('d4', 'd4', 1);">D4</button>
+			<button id="d#/eb4" class="noteButton" onclick="playAudio('dseb4', 'd#/eb4', 1);">D#4/Eb4</button>
+			<button id="e4" class="noteButton" onclick="playAudio('e4', 'e4', 1);">E4</button>
+			<button id="f4" class="noteButton" onclick="playAudio('f4', 'f4', 1);">F4</button>
+			<button id="f#/gb4" class="noteButton" onclick="playAudio('fsgb4', 'f#/gb4', 1);">F#4/Gb4</button>
+			<button id="g4" class="noteButton" onclick="playAudio('g4', 'g4', 1);">G4</button>
+			<button id="g#/ab4" class="noteButton" onclick="playAudio('gsab4', 'g#/ab4', 1);">G#4/Ab4</button>
+			<button id="a4" class="noteButton" onclick="playAudio('a4', 'a4', 1.);">A4</button>
+			<button id="a#/bb4" class="noteButton" onclick="playAudio('asbb4', 'a#/bb4', 1);">A#4/Bb4</button>
+			<button id="b4" class="noteButton" onclick="playAudio('b4', 'b4', 1);">B4</button>
+		</div>
+		<br />
+		<div id="oct5">
+			<h3>C5 - B5</h3>
+			<button id="c5" class="noteButton" onclick="playAudio('c5', 'c5', 1.2);">C5</button>
+			<button id="c#/db5" class="noteButton" onclick="playAudio('csdb5', 'c#/db5', 1.2);">C#5/Db5</button>
+			<button id="d5" class="noteButton" onclick="playAudio('d5', 'd5', 1.2);">D5</button>
+			<button id="d#/eb5" class="noteButton" onclick="playAudio('dseb5', 'd#/eb5', 1.2);">D#5/Eb5</button>
+			<button id="e5" class="noteButton" onclick="playAudio('e5', 'e5', 1.2);">E5</button>
+			<button id="f5" class="noteButton" onclick="playAudio('f5', 'f5', 1.2);">F5</button>
+			<button id="f#/gb5" class="noteButton" onclick="playAudio('fsgb5', 'f#/gb5', 1.2);">F#5/Gb5</button>
+			<button id="g5" class="noteButton" onclick="playAudio('g5', 'g5', 1.2);">G5</button>
+			<button id="g#/ab5" class="noteButton" onclick="playAudio('gsab5', 'g#/ab5', 1.2);">G#5/Ab5</button>
+			<button id="a5" class="noteButton" onclick="playAudio('a5', 'a5', 1);">A5</button>
+			<button id="a#/bb5" class="noteButton" onclick="playAudio('asbb5', 'a#/bb5', 1);">A#5/Bb5</button>
+			<button id="b5" class="noteButton"  onclick="playAudio('b5', 'b5', 1);">B5</button>
+		</div>
+		<br />
+		<div id="oct6">
+			<h3>C6 - B6</h3>
+			<button id="c6" class="noteButton"  onclick="playAudio('c6', 'c6', 1);">C6</button>
+			<button id="c#/db6" class="noteButton" onclick="playAudio('csdb6', 'c#/db6', 1);">C#6/Db6</button>
+			<button id="d6" class="noteButton" onclick="playAudio('d6', 'd6', 1);">D6</button>
+			<button id="d#/eb6" class="noteButton" onclick="playAudio('dseb6', 'd#/eb6', 1);">D#6/Eb6</button>
+			<button id="e6" class="noteButton" onclick="playAudio('e6', 'e6', 1);">E6</button>
+			<button id="f6" class="noteButton" onclick="playAudio('f6', 'f6', 1);">F6</button>
+			<button id="f#/gb6" class="noteButton" onclick="playAudio('fsgb6', 'f#/gb6', 1);">F#6/Gb6</button>
+			<button id="g6" class="noteButton" onclick="playAudio('g6', 'g6', 1);">G6</button>
+			<button id="g#/ab6" class="noteButton" onclick="playAudio('gsab6', 'g#/ab6', 1);">G#6/Ab6</button>
+			<button id="a6" class="noteButton" onclick="playAudio('a6', 'a6', 1);">A6</button>
+			<button id="a#/bb6" class="noteButton" onclick="playAudio('asbb6', 'a#/bb6', 1);">A#6/Bb6</button>
+			<button id="b6" class="noteButton" onclick="playAudio('b6', 'b6', 1);">B6</button>
+		</div>
+	</div>
+	<script src="ffp.1.js"></script>
+	<script src="utilities.js"></script>
+</body>
+</html>

@@ -5,7 +5,7 @@ var numRight = 0;
 var numTimesGuessed = 0;
 function playAudio(filePath, buttonID, numSeconds)
 {
-	var audio = new Audio("Notes/" + filePath + ".wav");
+	var audio = new Audio(filePath + ".wav");
 	audio.play();
 	pauseButton(buttonID, numSeconds);
 }

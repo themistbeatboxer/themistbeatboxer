@@ -5,7 +5,14 @@ var numRight = 0;
 var numTimesGuessed = 0;
 function playAudio(filePath, buttonID, numSeconds)
 {
-	var audio = new Audio(filePath + ".wav");
+	var octNum = document.getElementById('octNum').value;
+	var audio = new Audio("Notes/" + filePath + octNum.toString() +  ".wav");
+	audio.play();
+	pauseButton(buttonID, numSeconds);
+}
+function playAudioElse(filePath, buttonID, numSeconds)
+{
+	var audio = new Audio("Notes/" + filePath +  ".wav");
 	audio.play();
 	pauseButton(buttonID, numSeconds);
 }
@@ -117,13 +124,13 @@ function training()
 	noteFileNameFinal = noteFileName1 + octaveNumber;
 	NfNf = noteFileNameFinal;
 
-	document.getElementById("nameOfNote").innerHTML = note;
-	document.getElementById("octaveNumber").innerHTML = octaveNumber;
+	document.getElementById("noteName").innerHTML = note;
+	document.getElementById("noteOctave").innerHTML = octaveNumber;
 
 	document.getElementById("trainButtonHear").disabled = true;
 	setTimeout(function(){document.getElementById("trainButtonHear").disabled = false;}, (1*1000));
 
-	playAudio(noteFileNameFinal, "trainButton", 1);
+	playAudioElse(noteFileNameFinal, "trainButton", 1);
 }
 
 function test()
@@ -230,7 +237,7 @@ function test()
 	noteFileNameFinal = noteFileName1 + octaveNumber;
 	nFnF = noteFileNameFinal;
 
-	playAudio(noteFileNameFinal, "buttonTest", 1);
+	playAudioElse(noteFileNameFinal, "buttonTest", 1);
 	
 	document.getElementById("stat").innerHTML = "Now Playing", document.getElementById("buttonTest").disabled = true, document.getElementById("buttonTestHear").disabled = true;
 	setTimeout(function(){document.getElementById("stat").innerHTML = "Not Playing", document.getElementById("buttonTest").disabled = false, document.getElementById("buttonTestHear").disabled = false;}, (1*1000));
@@ -276,7 +283,7 @@ function hearAgain()
 	}
 	else
 	{
-		playAudio(nFnF, "buttonTestHear", 1);
+		playAudioElse(nFnF, "buttonTestHear", 1);
 		document.getElementById("stat").innerHTML = "Now Playing", document.getElementById("buttonTestHear").disabled = true, document.getElementById("buttonTest").disabled = true;
 		setTimeout(function(){document.getElementById("stat").innerHTML = "Not Playing", document.getElementById("buttonTestHear").disabled = false, document.getElementById("buttonTest").disabled = false;}, (1*1000));
 	}
@@ -290,37 +297,8 @@ function hearAgainTraining()
 	}
 	else
 	{
-		playAudio(NfNf, "trainButtonHear", 1);
+		playAudioElse(NfNf, "trainButtonHear", 1);
 		document.getElementById("trainButton").disabled = true, document.getElementById("trainButtonHear").disabled = true;
 		setTimeout(function(){document.getElementById("trainButton").disabled = false, document.getElementById("trainButtonHear").disabled = false;}, (1*1000));
 	}
-}
-
-function playSong(whichSong)
-{
-	if(whichSong == 0)
-	{
-		playBassLine(0);
-	}	
-}
-
-function playBassLine(whichSong)
-{
-	playAudio("g3", "playSongButton", 1);
-	playAudio("b3", "playSongButton", 1);
-	playAudio("d4", "playSongButton", 1);
-	setTimeout(function(){playAudio("g3", "playSongButton", 1), playAudio("b3", "playSongButton", 1), playAudio("d4", "playSongButton", 1);}, 800);
-	setTimeout(function(){playAudio("g3", "playSongButton", 1), playAudio("b3", "playSongButton", 1), playAudio("d4", "playSongButton", 1);}, 1600);
-
-	setTimeout(function(){playAudio("d3", "playSongButton", 1), playAudio("fsgb3", "playSongButton", 1), playAudio("a3", "playSongButton", 1);}, 2200);
-	setTimeout(function(){playAudio("d3", "playSongButton", 1), playAudio("fsgb3", "playSongButton", 1), playAudio("a3", "playSongButton", 1);}, 3000);
-	setTimeout(function(){playAudio("d3", "playSongButton", 1), playAudio("fsgb3", "playSongButton", 1), playAudio("a3", "playSongButton", 1);}, 3800);
-
-	setTimeout(function(){playAudio("e3", "playSongButton", 1), playAudio("g3", "playSongButton", 1), playAudio("b3", "playSongButton", 1);}, 4400);
-	setTimeout(function(){playAudio("e3", "playSongButton", 1), playAudio("g3", "playSongButton", 1), playAudio("b3", "playSongButton", 1);}, 5200);
-	setTimeout(function(){playAudio("e3", "playSongButton", 1), playAudio("g3", "playSongButton", 1), playAudio("b3", "playSongButton", 1);}, 6000);
-
-	setTimeout(function(){playAudio("c3", "playSongButton", 1), playAudio("e3", "playSongButton", 1), playAudio("g3", "playSongButton", 1);}, 6600);
-	setTimeout(function(){playAudio("c3", "playSongButton", 1), playAudio("e3", "playSongButton", 1), playAudio("g3", "playSongButton", 1);}, 7400);
-	setTimeout(function(){playAudio("c3", "playSongButton", 1), playAudio("e3", "playSongButton", 1), playAudio("g3", "playSongButton", 1);}, 8200);
 }

@@ -1,23 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Pitch Things - Home</title>
-	<link rel="stylesheet" href="style.css">
+	<title>Home</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<script type="text/javascript" src="script.js"></script>
 </head>
-<body>
-	<h1>Pitch Things</h1>
-	<br /> <br />
-	<div id="pageSelector">
-		<a href="index.html"><button class="pageType">Home</button></a>
-		<a href="library.html"><button class="pageType">Library</button></a>
-		<a href="training.html"><button class="pageType">Training</button></a>
-		<a href="test.html"><button class="pageType">Test</button></a>
+<body onload="initialize();">
+	<div id="logoSpace">
+		<img src="logo-pink.png">
 	</div>
-	<br /> <br /> <hr /> <br />
-	<div id="textThings">
-		<h4>Welcome to Pitch Things! This website allows users to perfect their ear-note matching abilities! The Library Page offers each note of each octave for playing back. The Training Page randomly plays back notes and displays the associated note letter and octave number. The Test Page will only play back random notes, and will allow users to determine what they think the played note is.</h4>
+	<br /><br /><br><br /><br /><br>
+	<div class="table">
+		<div class="row">
+			<div class="column">
+				<a href="index.html"><img src="home-pink.png" class="icon" /></a>
+				<div class="descSpace">
+					<span class="descTitle">home</span><br /><br /><span class="desc">The Home Page - Navigate to any page from here! See their descriptions as well!</span>
+				</div>
+				<br/><br/><br/><br /><br /><br>
+			</div>
+			<div class="column">
+				<div class="descSpace">
+					<span class="descTitle">train</span><br /><br /><span class="desc">The Training Page - Train your pitch accuracy here!</span>
+				</div>
+				<a href="train.html"><img src="train-pink.png" class="icon" /></a>
+			</div>
+		</div>
+		<div class="row">
+			<div class="column">
+				<a href="lib.html"><img src="lib-pink.png" class="icon" /></a>
+				<div class="descSpace">
+					<span class="descTitle">library</span><br /><br /><span class="desc">The Library Page - Listen to any note from the 1st to the 6th octave here!</span>
+				</div>
+			</div>
+			<div class="column">
+				<div class="descSpace">
+					<span class="descTitle">test</span><br /><br /><span class="desc">The Testing Page - Test your pitch accuracy here!</span>
+				</div>
+				<a href="test.html"><img src="test-pink.png" class="icon" /></a>
+			</div>
+		</div>
 	</div>
-	<script src="ffp.1.js"></script>
-	<script src="utilities.js"></script>
 </body>
 </html>

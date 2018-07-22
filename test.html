@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" href="style.css">
-	<title>Pitch Things - Test</title>
-	<br />
-	<div id="pageSelector">
-		<a href="index.html"><button class="pageType">Home</button></a>
-		<a href="library.html"><button class="pageType">Library</button></a>
-		<a href="training.html"><button class="pageType">Training</button></a>
-		<a href="test.html"><button class="pageType">Test</button></a>
+	<title>Test</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<script type="text/javascript" src="utilities.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+	<div class="panel">
+		<a href="index.html"><img src="home-pink.png" /></a>
+		<a href="lib.html"><img src="lib-pink.png" /></a>
+		<a href="train.html"><img src="train-pink.png" /></a>
+		<a href="test.html"><img src="test-pink.png"/ ></a>
 	</div>
-	<br /> <hr />
-	<h1>Testing</h1>
-	<h3>Welcome to the Testing Page! Here, you will be able to test your ear by hearing random notes and attempting to correctly determine which note it is! Simply click the button of the note you think is being played. If you get it wrong, the same note will be played again and you can answer once more.</h3>
-	<br /> <br />
+	<br /><br /><br />
 	<div id="textThings">
 		<h3>Status: <span id="stat">Not Playing</span></h3>
 		<h3 id="rightwrong"></h3>
@@ -38,11 +38,6 @@
 		<button id="buttonTest" class="testButton" onclick="test();">Next</button> <button id="buttonTestHear" class="testButton" onclick="hearAgain();">Hear Again</button>
 	</div>
 	<br />
-	<h3>Score: <span id="score">0 / 0</span></h3>
-</head>
-<body>
-
-	<script src="ffp.1.js"></script>
-	<script src="utilities.js"></script>
+	<h3 style="font-size: 24px;">Score: <span style="font-size: 24px;" id="score">0 / 0</span></h3>
 </body>
 </html>
